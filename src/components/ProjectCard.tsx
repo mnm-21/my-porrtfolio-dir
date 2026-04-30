@@ -31,9 +31,9 @@ export function ProjectCard({ project, variant = "selected", index = 0 }: Projec
     const flipped = index % 2 === 1;
     return (
       <article className={cn("project-row", flipped && "flipped")}>
+        <Link className="card-hit-area" href={`/projects/${project.id}`} aria-label={`View ${project.shortTitle} details`} />
         <MediaBlock {...project.media} className="project-media" />
         <div className="project-row-content">
-          <span className="project-row-number">{String(project.cardNumber).padStart(2, "0")}</span>
           <Tag variant="teal">{project.category}</Tag>
           <h2 className="project-title">{project.shortTitle}</h2>
           <p className="project-summary">{project.summary}</p>
@@ -66,9 +66,9 @@ export function ProjectCard({ project, variant = "selected", index = 0 }: Projec
 
   return (
     <article className={cn("project-card", index === 0 ? "featured" : "selected")}>
+      <Link className="card-hit-area" href={`/projects/${project.id}`} aria-label={`View ${project.shortTitle} details`} />
       <MediaBlock {...project.media} priority={index === 0} />
       <div className="project-shade" />
-      <span className="project-index">{String(project.cardNumber).padStart(2, "0")}</span>
       <div className="project-content">
         <Tag variant="teal">{project.category}</Tag>
         <h3 className="project-title">{project.shortTitle}</h3>

@@ -1,8 +1,6 @@
 import { AnimatedHero } from "@/components/AnimatedHero";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionLabel } from "@/components/SectionLabel";
-import { StatsBar } from "@/components/StatsBar";
-import { Ticker } from "@/components/Ticker";
 import { PROJECTS } from "@/data/projects";
 
 export default function HomePage() {
@@ -11,11 +9,9 @@ export default function HomePage() {
   return (
     <>
       <AnimatedHero />
-      <StatsBar />
-      <Ticker />
       <section className="section">
         <div className="container">
-          <SectionLabel index="01" title="Selected Work" href="/projects" linkLabel="View All ->" />
+          <SectionLabel title="Selected Work" href="/projects" linkLabel="View All ->" />
           <div className="selected-grid">
             {selected.map((project, index) => (
               <ProjectCard project={project} index={index} key={project.id} />

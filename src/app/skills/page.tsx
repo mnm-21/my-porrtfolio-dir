@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Bot, BrainCircuit, Code2, Eye } from "lucide-react";
 import { Tag } from "@/components/Tag";
 
@@ -13,7 +12,7 @@ const PRIMARY_SKILLS = [
     title: "Programming",
     description: "Research prototypes, simulations, model training, and engineering tooling.",
     icon: Code2,
-    tags: ["Python", "C++"],
+    tags: ["Python", "C++", "MATLAB"],
   },
   {
     title: "Machine Learning & AI",
@@ -31,14 +30,14 @@ const PRIMARY_SKILLS = [
     title: "Robotics & Simulation",
     description: "Embodied systems in simulation with reproducible experimentation and control policies.",
     icon: Bot,
-    tags: ["MuJoCo", "ROS", "CoppeliaSim"],
+    tags: ["MuJoCo", "ROS2", "CoppeliaSim", "Isaac Sim"],
   },
 ];
 
 const MATRIX = [
-  ["Languages", ["Python", "C++"]],
+  ["Languages", ["Python", "C++", "MATLAB"]],
   ["Frameworks", ["PyTorch", "TensorFlow", "Scikit-learn"]],
-  ["Simulation", ["MuJoCo", "ROS", "CoppeliaSim", "Isaac Sim"]],
+  ["Simulation", ["MuJoCo", "ROS2", "CoppeliaSim", "Isaac Sim"]],
   ["Vision", ["OpenCV", "NumPy", "SciPy", "Pandas"]],
   ["Tools", ["Git", "Linux", "LaTeX", "VSCode"]],
 ];
@@ -47,7 +46,6 @@ export default function SkillsPage() {
   return (
     <>
       <section className="container page-hero" aria-labelledby="skills-title">
-        <div className="page-index">03 /</div>
         <h1 className="page-title" id="skills-title">
           Expertise & Stack
         </h1>
@@ -88,26 +86,6 @@ export default function SkillsPage() {
             </div>
           ))}
         </div>
-
-        <article className="feature-band">
-          <div className="feature-copy">
-            <h2>Robotics and Simulation</h2>
-            <p>
-              Building and evaluating embodied systems in simulation, with a focus on reproducible experimentation and transferable
-              control policies.
-            </p>
-            <div className="tag-row">
-              {["MuJoCo", "ROS", "CoppeliaSim", "Git", "Linux", "LaTeX", "VSCode"].map((tag) => (
-                <Tag key={tag} variant="teal">
-                  {tag}
-                </Tag>
-              ))}
-            </div>
-          </div>
-          <div className="feature-media media-block">
-            <Image src="/assets/img/robot_model_Panda_isaac.png" alt="Panda robotic arm simulation environment" fill sizes="(max-width: 768px) 100vw, 45vw" />
-          </div>
-        </article>
       </section>
     </>
   );

@@ -11,7 +11,6 @@ export default function JourneyPage() {
   return (
     <>
       <section className="container page-hero" aria-labelledby="journey-title">
-        <div className="page-index">04 /</div>
         <h1 className="page-title" id="journey-title">
           A Journey of Research and Engineering
         </h1>

@@ -11,7 +11,6 @@ export default function ContactPage() {
   return (
     <section className="container contact-layout" aria-labelledby="contact-title">
       <div className="contact-statement">
-        <div className="page-index mb-8">05 /</div>
         <h1 id="contact-title">
           Let&apos;s build
           <br />
