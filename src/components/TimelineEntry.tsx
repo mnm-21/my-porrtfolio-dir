@@ -2,7 +2,7 @@ import { MediaBlock } from "@/components/MediaBlock";
 import { Tag } from "@/components/Tag";
 import type { JourneyEntry } from "@/data/journey";
 
-export function TimelineEntry({ entry, index }: { entry: JourneyEntry; index: number }) {
+export function TimelineEntry({ entry }: { entry: JourneyEntry }) {
   return (
     <article className="timeline-entry">
       <div>

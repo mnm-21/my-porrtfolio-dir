@@ -12,7 +12,10 @@ export function MediaBlock({ src, type, alt, className = "", priority }: MediaBl
   if (type === "video" && src) {
     return (
       <div className={`media-block ${className}`}>
-        <video src={src} muted loop autoPlay playsInline preload="none" aria-label={alt} />
+        <video muted loop autoPlay playsInline preload="auto" aria-label={alt}>
+          <source src={src} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     );
   }

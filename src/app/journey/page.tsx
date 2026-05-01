@@ -20,8 +20,8 @@ export default function JourneyPage() {
       </section>
 
       <section className="container timeline" aria-label="Research and professional timeline">
-        {JOURNEY.map((entry, index) => (
-          <TimelineEntry entry={entry} index={index} key={`${entry.role}-${entry.date}`} />
+        {JOURNEY.map((entry) => (
+          <TimelineEntry entry={entry} key={`${entry.role}-${entry.date}`} />
         ))}
       </section>
 
