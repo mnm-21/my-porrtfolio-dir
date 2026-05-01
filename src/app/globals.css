@@ -505,11 +505,12 @@ button {
   margin-top: 4px;
   padding-bottom: 0.1em;
   color: transparent;
+  -webkit-text-fill-color: transparent;
   background:
-    linear-gradient(110deg, #fffaf0 0%, var(--accent-teal) 42%, var(--accent-blue) 100%);
+    linear-gradient(110deg, #fffaf0 0%, #f0dcb2 48%, #d4af37 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: 0 0 42px rgba(227, 211, 183, 0.1);
+  text-shadow: 0 0 30px rgba(227, 211, 183, 0.15);
 }
 
 .hero-word {

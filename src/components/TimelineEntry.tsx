@@ -5,7 +5,6 @@ import type { JourneyEntry } from "@/data/journey";
 export function TimelineEntry({ entry, index }: { entry: JourneyEntry; index: number }) {
   return (
     <article className="timeline-entry">
-      <span className="timeline-number">{String(index + 1).padStart(2, "0")}</span>
       <div>
         <div className="timeline-meta">
           <span>{entry.date}</span>
