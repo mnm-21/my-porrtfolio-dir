@@ -11,10 +11,10 @@
   --text-secondary: #b7b1a7;
   --text-muted: #706b64;
   --text-inverse: #050505;
-  --accent-teal: #e3d3b7;
-  --accent-blue: #b89b62;
-  --accent-teal-dim: rgba(227, 211, 183, 0.13);
-  --accent-blue-dim: rgba(184, 155, 98, 0.12);
+  --accent-cream: #e3d3b7;
+  --accent-gold: #b89b62;
+  --accent-cream-dim: rgba(227, 211, 183, 0.13);
+  --accent-gold-dim: rgba(184, 155, 98, 0.12);
   --accent-glow: 0 0 42px rgba(227, 211, 183, 0.16);
   --line: rgba(244, 241, 234, 0.075);
   --line-strong: rgba(244, 241, 234, 0.14);
@@ -95,12 +95,12 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent-teal);
+  outline: 2px solid var(--accent-cream);
   outline-offset: 3px;
 }
 
 ::selection {
-  background: var(--accent-teal);
+  background: var(--accent-cream);
   color: var(--text-inverse);
 }
 
@@ -170,7 +170,7 @@ button {
 }
 
 .accent {
-  color: var(--accent-teal);
+  color: var(--accent-cream);
 }
 
 @keyframes pulse-dot {
@@ -403,7 +403,7 @@ button {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-teal);
+  color: var(--accent-cream);
 }
 
 .nav-hire {
@@ -412,9 +412,9 @@ button {
   align-items: center;
   gap: 8px;
   padding: 0 16px;
-  border: 1px solid var(--accent-teal);
+  border: 1px solid var(--accent-cream);
   border-radius: 999px;
-  background: var(--accent-teal);
+  background: var(--accent-cream);
   color: var(--text-inverse);
   transition:
     transform var(--duration-fast) var(--ease-out),
@@ -423,7 +423,7 @@ button {
 
 .nav-hire:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px var(--accent-teal-dim);
+  box-shadow: 0 4px 12px var(--accent-cream-dim);
 }
 
 .nav-toggle {
@@ -485,7 +485,7 @@ button {
   width: 8px;
   height: 8px;
   border-radius: 999px;
-  background: var(--accent-teal);
+  background: var(--accent-cream);
   box-shadow: 0 0 18px rgba(227, 211, 183, 0.5);
   animation: pulse-dot 2s infinite;
 }
@@ -507,7 +507,7 @@ button {
   color: transparent;
   -webkit-text-fill-color: transparent;
   background:
-    linear-gradient(110deg, #fffaf0 0%, var(--accent-teal) 42%, var(--accent-blue) 100%);
+    linear-gradient(110deg, #fffaf0 0%, var(--accent-cream) 42%, var(--accent-gold) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 0 0 42px rgba(227, 211, 183, 0.1);
@@ -521,7 +521,7 @@ button {
 
 .hero-subline {
   margin: 28px 0 22px;
-  color: var(--accent-teal);
+  color: var(--accent-cream);
   font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 0.85rem;
   letter-spacing: 0.06em;
@@ -554,7 +554,7 @@ button {
   width: 2px;
   height: 1em;
   display: inline-block;
-  background: var(--accent-teal);
+  background: var(--accent-cream);
   box-shadow: var(--accent-glow);
   transform: translateY(0.12em);
   animation: cursor-blink 1s steps(1, end) infinite;
@@ -590,8 +590,8 @@ button {
 }
 
 .button-primary,
-.button-teal {
-  background: var(--accent-teal);
+.button-cream {
+  background: var(--accent-cream);
   color: var(--text-inverse);
 }
 
@@ -665,10 +665,10 @@ button {
   letter-spacing: 0.04em;
 }
 
-.tag-teal {
+.tag-cream {
   border-color: rgba(227, 211, 183, 0.22);
-  background: var(--accent-teal-dim);
-  color: var(--accent-teal);
+  background: var(--accent-cream-dim);
+  color: var(--accent-cream);
 }
 
 .tag-outline {
@@ -892,7 +892,7 @@ button {
 }
 
 .filter-chip.active {
-  background: var(--accent-teal);
+  background: var(--accent-cream);
   color: var(--text-inverse);
   box-shadow: 0 4px 12px rgba(227, 211, 183, 0.3);
 }
@@ -1095,7 +1095,7 @@ button {
   content: "->";
   position: absolute;
   left: 0;
-  color: var(--accent-teal);
+  color: var(--accent-cream);
   font-family: var(--font-mono), ui-monospace, monospace;
 }
 
@@ -1127,7 +1127,7 @@ button {
 
 .terminal-stack .prompt,
 .terminal-stack .line {
-  color: var(--accent-teal);
+  color: var(--accent-cream);
 }
 
 .related-row {
@@ -1174,8 +1174,8 @@ button {
   justify-content: center;
   margin-bottom: 24px;
   border-radius: 12px;
-  background: var(--accent-teal-dim);
-  color: var(--accent-teal);
+  background: var(--accent-cream-dim);
+  color: var(--accent-cream);
 }
 
 .skill-card h2 {
@@ -1224,7 +1224,7 @@ button {
 }
 
 .matrix-items span:hover {
-  color: var(--accent-teal);
+  color: var(--accent-cream);
 }
 
 .timeline {
@@ -1286,7 +1286,7 @@ button {
 }
 
 .timeline-meta span:last-child {
-  color: var(--accent-teal);
+  color: var(--accent-cream);
 }
 
 .timeline-entry h2 {
@@ -1339,7 +1339,7 @@ button {
 .education-card strong {
   display: block;
   margin-top: 28px;
-  color: var(--accent-teal);
+  color: var(--accent-cream);
   font-family: var(--font-display), Georgia, serif;
   font-size: 2.6rem;
   line-height: 1;
@@ -1383,14 +1383,14 @@ button {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--bg-elevated);
-  color: var(--accent-teal);
+  color: var(--accent-cream);
   font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 0.82rem;
   transition: border-color var(--duration-fast) var(--ease-out);
 }
 
 .contact-link:hover {
-  border-color: var(--accent-teal);
+  border-color: var(--accent-cream);
 }
 
 .contact-form {
@@ -1437,14 +1437,14 @@ button {
 .field input:not(:placeholder-shown)+label,
 .field textarea:focus+label,
 .field textarea:not(:placeholder-shown)+label {
-  color: var(--accent-teal);
+  color: var(--accent-cream);
   transform: translateY(-9px) scale(0.82);
 }
 
 .field input:focus,
 .field textarea:focus {
-  border-color: var(--accent-teal);
-  box-shadow: 0 0 0 3px var(--accent-teal-dim);
+  border-color: var(--accent-cream);
+  box-shadow: 0 0 0 3px var(--accent-cream-dim);
   outline: none;
 }
 

@@ -18,7 +18,7 @@ export function ProjectCard({ project, variant = "selected", index = 0 }: Projec
       <Link className="compact-card" href={`/projects/${project.id}`}>
         <MediaBlock {...project.media} />
         <div>
-          <Tag size="sm" variant="teal">
+          <Tag size="sm" variant="cream">
             {project.category}
           </Tag>
           <h3 className="mt-3 font-display text-lg font-bold" style={{ display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>{project.shortTitle}</h3>
@@ -34,7 +34,7 @@ export function ProjectCard({ project, variant = "selected", index = 0 }: Projec
         <Link className="card-hit-area" href={`/projects/${project.id}`} aria-label={`View ${project.shortTitle} details`} />
         <MediaBlock {...project.media} className="project-media" />
         <div className="project-row-content">
-          <Tag variant="teal">{project.category}</Tag>
+          <Tag variant="cream">{project.category}</Tag>
           <h2 className="project-title">{project.shortTitle}</h2>
           <p className="project-summary">{project.summary}</p>
           <div className="tag-row mt-5">
@@ -79,7 +79,7 @@ export function ProjectCard({ project, variant = "selected", index = 0 }: Projec
         <MediaBlock {...project.media} priority={index < 3} />
       </div>
       <div className="project-info">
-        <Tag variant="teal" size="sm" className="mb-4">
+        <Tag variant="cream" size="sm" className="mb-4">
           {project.category}
         </Tag>
         <h3 className="project-title">{project.shortTitle}</h3>

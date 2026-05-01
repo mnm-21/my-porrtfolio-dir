@@ -49,7 +49,7 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
       <section className="container detail-hero">
         <div>
           <div className="breadcrumb">Projects / {project.shortTitle}</div>
-          <Tag variant="teal">{project.category}</Tag>
+          <Tag variant="cream">{project.category}</Tag>
           <h1 className="detail-title">{project.title}</h1>
           <p className="lead">{project.summary}</p>
           <div className="tag-row mt-6">

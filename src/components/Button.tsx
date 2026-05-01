@@ -6,7 +6,7 @@ interface ButtonProps {
   children: React.ReactNode;
   href?: string;
   external?: boolean;
-  variant?: "primary" | "secondary" | "ghost" | "teal";
+  variant?: "primary" | "secondary" | "ghost" | "cream";
   size?: "xs" | "sm" | "md" | "lg";
   icon?: LucideIcon;
   loading?: boolean;
