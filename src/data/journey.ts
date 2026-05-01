@@ -67,11 +67,6 @@ export const JOURNEY: JourneyEntry[] = [
     description:
       "Developed LLM-based solutions for document parsing and structured data extraction. Researched OCR techniques for tabular data, including Sparrow Parse, and contributed to scalable AI pipelines.",
     tags: ["GenAI", "OCR", "Document AI"],
-    media: {
-      type: "image",
-      src: "/assets/img/warehouse.jpg",
-      alt: "Structured automation visual for internship entry",
-    },
   },
 ];
 

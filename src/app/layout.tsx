@@ -10,7 +10,7 @@ const sourceSans = Source_Sans_3({ subsets: ["latin"], variable: "--font-body", 
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", weight: ["400", "500"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mayank-chandak.vercel.app"),
+  metadataBase: new URL("https://mayankchandak.vercel.app"),
   title: {
     default: "Mayank Chandak",
     template: "%s | Mayank Chandak",
