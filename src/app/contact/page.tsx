@@ -27,10 +27,10 @@ export default function ContactPage() {
               <Mail size={18} /> mayank.chandak21@gmail.com
             </a>
             <a className="contact-link" href="https://www.linkedin.com/in/mayank-chandak-8abb382ab/" target="_blank" rel="noreferrer">
-              <ExternalLink size={18} /> LinkedIn [external]
+              <ExternalLink size={18} /> LinkedIn
             </a>
             <a className="contact-link" href="https://github.com/mnm-21" target="_blank" rel="noreferrer">
-              <ExternalLink size={18} /> GitHub [external]
+              <ExternalLink size={18} /> GitHub
             </a>
           </div>
         </div>

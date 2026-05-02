@@ -350,6 +350,11 @@ button {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 100;
+  background: rgba(2, 3, 4, 0.25);
+  backdrop-filter: blur(20px);
+  padding-bottom: 24px;
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   transition:
     background var(--duration) var(--ease-out),
     border-color var(--duration) var(--ease-out),
@@ -357,9 +362,7 @@ button {
 }
 
 .nav.scrolled {
-  border-bottom: 1px solid var(--line);
-  background: rgba(2, 3, 4, 0.84);
-  backdrop-filter: blur(20px);
+  background: rgba(2, 3, 4, 0.65);
 }
 
 .nav-inner {
@@ -398,12 +401,13 @@ button {
 
 .nav-links a {
   color: var(--text-secondary);
-  transition: color var(--duration-fast) var(--ease-out);
+  transition: color var(--duration-fast) var(--ease-out), text-shadow var(--duration-fast) var(--ease-out);
 }
 
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--accent-cream);
+  text-shadow: 0 0 15px rgba(227, 211, 183, 0.9), 0 0 30px rgba(227, 211, 183, 0.4);
 }
 
 .nav-hire {
