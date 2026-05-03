@@ -63,13 +63,13 @@ export default function AboutPage() {
 
           <div className="flex flex-col gap-6 text-[var(--text-secondary)] leading-relaxed text-lg">
             <p>
-              I’m Mayank Chandak, a final-year Mechanical Engineering student at IIT Madras. Over time, I’ve found myself drawn to problems at the intersection of robotics, reinforcement learning, and computer vision, especially ones where things don’t behave nicely and you have to make systems work despite that.
+              I’m Mayank Chandak, a final-year Mechanical Engineering student at IIT Madras. Over time, I’ve found myself drawn to problems at the intersection of robotics, reinforcement learning, and computer vision, especially ones where variables don’t behave ideally and you have to make systems work despite that.
             </p>
             <p>
               I’ve had the chance to work on a mix of research problems. At the INSPIRE Lab, I worked on reinforcement learning for autonomous laparoscopic camera control, where the challenge was getting the system to behave consistently while adapting to different surgical phases. At the Computational Imaging Lab, I worked on flare removal in videos, contributing to FlareGS, which uses multi-view reconstruction to recover scenes under heavy visual corruption and was later published at an ICCV workshop. These experiences pushed me toward thinking more about robustness and real-world constraints rather than just performance on clean setups.
             </p>
             <p>
-              Outside of that, I’ve spent a lot of time building reinforcement learning systems from scratch, including work on robotic manipulation, multi-agent coordination, and musculoskeletal control. A lot of this involved dealing with instability, reward design, and things breaking in ways that aren’t obvious at first, which ended up being the most useful part of the learning.
+              Outside of that, I’ve spent a lot of time building reinforcement learning systems from scratch, including work on robotic manipulation, multi-agent coordination, and musculoskeletal control. A lot of this involved dealing with instability, reward design, and things breaking in ways that aren’t really obvious at first, but that ended up being the most useful part of the learning.
             </p>
             <p>
               Going forward, I want to keep working on problems where perception, decision-making, and control come together, and where solving them actually requires understanding the system end to end. I’m planning to pursue advanced education in robotics and AI, with a focus on building systems that can operate reliably outside controlled environments.
