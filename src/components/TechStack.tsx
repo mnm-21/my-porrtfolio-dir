@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Brain, Code2, Cpu, Eye, Layers, Terminal, Bot, Activity, Microscope, Database } from "lucide-react";
+import { Brain, Code2, Cpu, Eye, Layers, Terminal, Bot, Activity, Microscope, Database } from "lucide-react";
 import { SectionLabel } from "./SectionLabel";
 
 const CORE_TECH = [
