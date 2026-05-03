@@ -2,6 +2,7 @@ import { AnimatedHero } from "@/components/AnimatedHero";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionLabel } from "@/components/SectionLabel";
 import { ContactForm } from "@/components/ContactForm";
+import { TechStack } from "@/components/TechStack";
 import { PROJECTS } from "../data/projects";
 
 import { PageTransition } from "@/components/PageTransition";
@@ -20,20 +21,20 @@ export default function HomePage() {
           <SectionLabel title="About Me" />
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-center mt-8">
             <div className="relative aspect-square w-full max-w-sm mx-auto md:mx-0 overflow-hidden rounded-[20px] border border-[var(--line)]">
-              <Image 
-                src="/assets/img/mayank.jpg" 
-                alt="Mayank Chandak" 
-                fill 
+              <Image
+                src="/assets/img/mayank.jpg"
+                alt="Mayank Chandak"
+                fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 400px"
               />
             </div>
-            
+
             <div className="flex flex-col">
               <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-8">
                 I’m a final-year Mechanical Engineering student at IIT Madras working on robotics, reinforcement learning, and computer vision. I’m particularly interested in building systems that can actually function in messy, real-world settings rather than just clean benchmarks. Over the past few years, I’ve worked on problems ranging from surgical robotics to multi-agent systems and visual perception. Going forward, I plan to continue in this space through advanced research in robotics and AI.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-4 mb-10">
                 <div className="p-4 rounded-[16px] border border-[var(--line)] bg-[var(--bg-elevated)]">
                   <div className="text-[var(--text-muted)] font-mono text-xs uppercase tracking-wider mb-1.5">Education</div>
@@ -73,6 +74,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <TechStack />
 
       <section className="section section-compact border-t border-white/5">
         <div className="container">

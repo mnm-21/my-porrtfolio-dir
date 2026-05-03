@@ -30,7 +30,7 @@ const PRIMARY_SKILLS = [
     title: "Robotics & Simulation",
     description: "Physics-based simulation, embodied RL, surgical robotics, and multi-agent systems, from task design to policy deployment.",
     icon: Bot,
-    tags: ["MuJoCo", "SOFA", "ROS", "CoppeliaSim", "MyoSuite", "Robosuite"],
+    tags: ["MuJoCo", "SOFA", "ROS2", "CoppeliaSim", "MyoSuite", "Robosuite"],
   },
 ];
 
@@ -39,7 +39,7 @@ const MATRIX: [string, string[]][] = [
   ["ML Frameworks", ["PyTorch", "PyTorch Lightning", "TensorFlow", "Keras", "Scikit-learn"]],
   ["Vision & Data", ["OpenCV", "Pillow", "NumPy", "SciPy", "Pandas", "Matplotlib", "Seaborn"]],
   ["GenAI & NLP", ["HuggingFace", "LangChain", "Streamlit"]],
-  ["Simulation", ["MuJoCo", "SOFA Framework", "MyoSuite", "Robosuite", "CoppeliaSim", "ROS"]],
+  ["Simulation", ["MuJoCo", "SOFA Framework", "MyoSuite", "Robosuite", "CoppeliaSim", "ROS2"]],
   ["CAD & Design", ["SolidWorks", "AutoCAD", "Fusion 360", "Creo"]],
   ["Tools", ["Git", "Linux (Ubuntu)", "VSCode", "LaTeX", "Overleaf", "Canva"]],
 ];
